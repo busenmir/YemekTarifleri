@@ -15,12 +15,11 @@ import android.provider.MediaStore
 import android.view.*
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_tarif.*
 import java.io.ByteArrayOutputStream
 
-class TarifFragment : Fragment() {
+class TarifFragment : androidx.fragment.app.Fragment() {
 
     var secilenGorsel : Uri? = null
     var secilenBitmap : Bitmap? = null
